@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script async defer
+        src="https://maps.gomaps.pro/maps/api/js?key=AlzaSy7Cit8tsNzgEexJRMCYc4n1V_xBCobzUdC&libraries=geometry,places&callback=initAutocomplete">
+    </script>
+    <script async defer src="//ajax.gomaps.pro/ajax/libs/jquery/1.4.4/jquery.min.js">
+    </script>
+    <title>RideRite</title>
+    <link rel="stylesheet" href="Home.css" />
+  </head>
+    <header>
+      <nav class="Navbar">
+        <div class="nav_logo">
+          <i class="fa-solid fa-taxi"></i>
+          <h1>ride<span>Rite</span></h1>
+        </div>
+        <h2 class="nav_number">
+          <span><i class="fa-solid fa-phone"></i> 24×7</span
+          ><a class="bar" href="tel: +91-8053781824">+91-8053781824</a>
+        </h2>
+        <ul class="nav_menu">
+          <li class="nav_item"><a class="bar" target="_blank" href="#home">Home</a></li>
+          <li class="nav_item"><a class="bar" href="#">Blogs</a></li>
+          <li class="nav_item"><a class="bar" href="#">Contact US</a></li>
+        </ul>
+        <div class="hamburger" onclick="showSidebar()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="sidebar">
+          <li class="hamburger_rem" onclick="hideSidebar()">
+            <span>Menu</span><i class="fa-solid fa-xmark"></i>
+          </li>
+          <li class="sidebar_item"><a class="bar" href="#">Home</a></li>
+          <li class="sidebar_item"><a class="bar" href="#">Blogs</a></li>
+          <li class="sidebar_item"><a class="bar" href="#">Contact US</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home" class="main_content">
+      <div class="booking-options">
+        <div class="booking">
+          <ul class="trip_category">
+            <li class="trip_category-item"><a href="#">Airport Ride</a></li>
+            <li class="trip_category-item"><a href="#">City Rental</a></li>
+            <li class="trip_category-item"><a href="#">Outstation</a></li>
+            <li class="trip_category-item"><a href="#">Package</a></li>
+          </ul>
+          <div class="booking-details">
+            <div class="booking-details_container">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="font-size: 15px; margin: 0 3px"
+              ></i
+              ><input
+                type="text"
+                id="search_pickUp"
+                placeholder="Pick-up Location"
+                required
+              />
+            </div>
+            <div class="booking-details_container">
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="font-size: 15px; margin: 0 3px"
+              ></i
+              ><input
+                type="text"
+                id="search_destination"
+                placeholder="Drop-off Location" 
+                required
+              />
+            </div>
+
+            <div class="booking-details_container">
+              <input type="Date" placeholder="Pick up Date"  />
+            </div>
+            <div class="booking-details_container">
+              <input type="Time" placeholder="Time" required />
+            </div>
+            <div class="booking-details_container ">
+              <input
+                type="text"
+                class="distance"
+                id="total_distance"
+                placeholder="Total Distance"
+              />
+              <select id="fare-bucket" class="fare-bucket-select" required>
+                <option value="option1">Select Fare</option>
+                <option value="option2">
+                  0-10Km <span style="margin-left: 20px;"> --- 499Rs</span>
+                </option>
+                <option value="option2">
+                  11-15Km <span style="margin-left: 2px"> --- 599Rs</span>
+                </option>
+                <option value="option2">
+                  15-20Km <span style="margin-left: 2px"> --- 699Rs</span>
+                </option>
+                <option value="option2">
+                  20-25Km <span style="margin-left: 2px"> --- 799Rs</span>
+                </option>
+              </select>
+            </div>
+            <div class="booking-details_container">
+              <select id="fare-bucket" class="fare-bucket-select" required>
+                <option value="option1">Want to Share Ride</option>
+                <option value="option2">Yes</option>
+                <option value="option2">No</option>
+              </select>
+            </div>
+          </div>
+          <div class="search">
+            <label for="terms-and-conditions search_label">
+              <input
+                type="checkbox"
+                id="terms-and-conditions"
+                class="terms-and-conditions-checkbox"
+                required
+              />
+              I agree to the terms and conditions
+            </label>
+            <label for="age_verify" class="search_label">
+              <input type="checkbox" class="age_check" required />
+              Driver aged between 30 - 60?
+            </label>
+            <button class="search_button">Explore Cab</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a href="trial.htm"></a>
+  </body>
+  <script src="../script.js">
+    
+  </script>
+</html>
