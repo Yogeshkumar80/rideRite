@@ -135,7 +135,7 @@ section {
   overflow: hidden;
 }
 .main_content {
-  background: url("../assets/fast2.jpeg") no-repeat center center;
+  background: url("../assets/background.jpeg") no-repeat center center;
   height: 90vh;
   width: 100%; 
   inset:0;
