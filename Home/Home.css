@@ -290,6 +290,112 @@ section {
   font-weight: bold;
 }
 
+/* Blog Section */
+
+/* Blog Section Styling */
+.blog-section {
+  min-width: 80vw;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Blog Container Styling */
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Blog Card Styling */
+.blog-card {
+  width: 350px;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Blog Image Styling */
+.blog-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #002d72;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.date-day {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.date-month {
+  font-size: 0.8rem;
+}
+
+/* Blog Content Styling */
+.blog-content {
+  padding: 20px;
+}
+
+.blog-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-description {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  display: -webkit-box; 
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.8em; 
+}
+
+/* Read More Button Styling */
+.read-more-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  background-color: #002d72;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.read-more-btn:hover {
+  background-color: #0048a5;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 950px) {
   .nav_menu {
@@ -347,6 +453,26 @@ section {
     width: 80%; 
     margin-top: 10px; 
   }
+
+  /* Blog Section */
+  .blog-container {
+    flex-direction: column; 
+    align-items: center;
+}
+
+.blog-card {
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.blog-description {
+    max-height: 3.6em; 
+    -webkit-line-clamp: 2; 
+}
 
 
 }
