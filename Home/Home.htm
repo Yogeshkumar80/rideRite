@@ -10,14 +10,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script async defer
-        src="https://maps.gomaps.pro/maps/api/js?key=AlzaSy7Cit8tsNzgEexJRMCYc4n1V_xBCobzUdC&libraries=geometry,places&callback=initAutocomplete">
-    </script>
-    <script async defer src="//ajax.gomaps.pro/ajax/libs/jquery/1.4.4/jquery.min.js">
-    </script>
+    <script
+      async
+      defer
+      src="https://maps.gomaps.pro/maps/api/js?key=AlzaSy7Cit8tsNzgEexJRMCYc4n1V_xBCobzUdC&libraries=geometry,places&callback=initAutocomplete"
+    ></script>
+    <script
+      async
+      defer
+      src="//ajax.gomaps.pro/ajax/libs/jquery/1.4.4/jquery.min.js"
+    ></script>
     <title>RideRite</title>
     <link rel="stylesheet" href="Home.css" />
   </head>
+  <body>
     <header>
       <nav class="Navbar">
         <div class="nav_logo">
@@ -25,11 +31,13 @@
           <h1>ride<span>Rite</span></h1>
         </div>
         <h2 class="nav_number">
-          <span><i class="fa-solid fa-phone"></i> 24×7</span
-          ><a class="bar" href="tel: +91-8053781824">+91-8053781824</a>
+          <span><i class="fa-solid fa-phone"></i> 24×7</span>
+          <a class="bar" href="tel:+91-8053781824">+91-8053781824</a>
         </h2>
         <ul class="nav_menu">
-          <li class="nav_item"><a class="bar" target="_blank" href="#home">Home</a></li>
+          <li class="nav_item">
+            <a class="bar" target="_blank" href="#home">Home</a>
+          </li>
           <li class="nav_item"><a class="bar" href="#">Blogs</a></li>
           <li class="nav_item"><a class="bar" href="#">Contact US</a></li>
         </ul>
@@ -76,18 +84,17 @@
               ><input
                 type="text"
                 id="search_destination"
-                placeholder="Drop-off Location" 
+                placeholder="Drop-off Location"
                 required
               />
             </div>
-
             <div class="booking-details_container">
-              <input type="Date" placeholder="Pick up Date"  />
+              <input type="date" placeholder="Pick-up Date" />
             </div>
             <div class="booking-details_container">
-              <input type="Time" placeholder="Time" required />
+              <input type="time" placeholder="Pick-up Time" required />
             </div>
-            <div class="booking-details_container ">
+            <div class="booking-details_container">
               <input
                 type="text"
                 class="distance"
@@ -96,30 +103,22 @@
               />
               <select id="fare-bucket" class="fare-bucket-select" required>
                 <option value="option1">Select Fare</option>
-                <option value="option2">
-                  0-10Km <span style="margin-left: 20px;"> --- 499Rs</span>
-                </option>
-                <option value="option2">
-                  11-15Km <span style="margin-left: 2px"> --- 599Rs</span>
-                </option>
-                <option value="option2">
-                  15-20Km <span style="margin-left: 2px"> --- 699Rs</span>
-                </option>
-                <option value="option2">
-                  20-25Km <span style="margin-left: 2px"> --- 799Rs</span>
-                </option>
+                <option value="option2">0-10Km — 499Rs</option>
+                <option value="option2">11-15Km — 599Rs</option>
+                <option value="option2">15-20Km — 699Rs</option>
+                <option value="option2">20-25Km — 799Rs</option>
               </select>
             </div>
             <div class="booking-details_container">
-              <select id="fare-bucket" class="fare-bucket-select" required>
-                <option value="option1">Want to Share Ride</option>
+              <select id="share-ride" class="fare-bucket-select" required>
+                <option value="option1">Want to Share Ride?</option>
                 <option value="option2">Yes</option>
                 <option value="option2">No</option>
               </select>
             </div>
           </div>
           <div class="search">
-            <label for="terms-and-conditions search_label">
+            <label for="terms-and-conditions" class="search_label">
               <input
                 type="checkbox"
                 id="terms-and-conditions"
@@ -137,24 +136,49 @@
         </div>
       </div>
     </section>
-    
-  <!-- Blog Section -->
-  <section id="blog" class="blog-section">
-    <div class="blog-container">
-      
-     <!-- Blog Card 1 -->
 
-      <div class="blog-card">
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+      <h1 style="margin-bottom:10px; font-size:4rem; cursor:pointer">Blog</h1>
+      <div class="blog-container">
+        
+        <!-- Blog Card 1 -->
+        <div class="blog-card">
           <div class="blog-image">
-            <img src="../assets/dog2.png" alt="Blog Image 2" />
+            <img src="../assets/dog2.png" alt="Blog Image 1" />
+            <div class="blog-date">
+              <span class="date-day">16</span>
+              <span class="date-month">sep</span>
+            </div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">
+              Can I take my dog in a taxi? Is it allowed, or do I need to
+              mention this somewhere?
+            </h3>
+            <p class="blog-description">
+              Inform the taxi driver about bringing a dog by adding a note in
+              the special instructions, mentioning the dog's size. For
+              cross-border trips, extra rules may apply. Contact the Service
+              Center to ensure your booking includes dog transport.
+            </p>
+            <button class="read-more-btn">Read More</button>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="../assets/wheelchair.png" alt="Blog Image 2" />
             <div class="blog-date">
               <span class="date-day">18</span>
-              <span class="date-month">May</span>
+              <span class="date-month">sep</span>
             </div>
           </div>
           <div class="blog-content">
             <h3 class="blog-title">
               Can I bring my wheelchair? Are your vehicles Wheelchair
+              Accessible?
             </h3>
             <p class="blog-description">
               Most of our vehicles can accommodate a foldable wheelchair. Please
@@ -167,61 +191,61 @@
             <button class="read-more-btn">Read More</button>
           </div>
         </div>
+        
 
-      <!-- Blog Card 2 -->
-      <div class="blog-card">
-        <div class="blog-image">
-          <img src="../assets/wheelchar.jpg" alt="Blog Image 2" />
-          <div class="blog-date">
-            <span class="date-day">18</span>
-            <span class="date-month">May</span>
+        <!-- Blog Card 3 -->
+        <div class="blog-card">
+          <div class="blog-image">
+            <img src="../assets/background.jpeg" alt="Blog Image 3" />
+            <div class="blog-date">
+              <span class="date-day">22</span>
+              <span class="date-month">Sep</span>
+            </div>
+          </div>
+          <div class="blog-content">
+            <h3 class="blog-title">
+              For an airport pickup, how far after I land should I ask to get
+              picked up?
+            </h3>
+            <p class="blog-description">
+              We suggest a pickup time for your convenience. If you have
+              luggage, book 30-40 minutes after landing, or 20 minutes if you
+              have only a carry-on. For international flights, add 30-60 minutes
+              for customs. Call the driver once you land to let them know you’ve
+              arrived.
+            </p>
+            <button class="read-more-btn">Read More</button>
           </div>
         </div>
-        <div class="blog-content">
-          <h3 class="blog-title">
-            Can I bring my wheelchair? Are your vehicles Wheelchair
-            Accessible?
-          </h3>
-          <p class="blog-description">
-            Most of our vehicles can accommodate a foldable wheelchair. Please
-            consider the space it takes in the trunk along with your luggage.
-            Mention it in the 'Special Instructions' before confirming your
-            booking. For fully accessible vehicles, look for the ramp symbol.
-            If you need one, be sure to specify it in the 'Special
-            Instructions' before confirming your booking.
-          </p>
-          <button class="read-more-btn">Read More</button>
-        </div>
+        <div class="line"></div>
       </div>
+    </section>
+    <!-- End Blog Section -->
 
-      <!-- Blog Card 3 -->
-      <div class="blog-card">
-        <div class="blog-image">
-          <img src="../assets/background.jpeg" alt="Blog Image 3" />
-          <div class="blog-date">
-            <span class="date-day">09</span>
-            <span class="date-month">May</span>
+    <!-- Booking Feature -->
+    <section id="booking_feature" class="booking_feature">
+      <div class="flexibal">
+          <img src="../assets/calendar.png" alt="CalenderImg">
+          <div class="detail">
+              <h3>Flexible rentals</h3>
+              <p>Cancel or change most bookings for free up to 48 hours before pick-up</p>
           </div>
-        </div>
-        <div class="blog-content">
-          <h3 class="blog-title">
-            For an airport pickup, how far after I land should I ask to get
-            picked up?
-          </h3>
-          <p class="blog-description">
-            We suggest a pickup time for your convenience. If you have
-            luggage, book 30-40 minutes after landing, or 20 minutes if you
-            have only a carry-on. For international flights, add 30-60 minutes
-            for customs. Call the driver once you land to let them know you’ve
-            arrived.
-          </p>
-          <button class="read-more-btn">Read More</button>
-        </div>
       </div>
-    </div>
+      <div class="flexibal">
+          <img src="../assets/search.png" alt="Search">
+          <div class="details">
+              <h3>No hidden fees</h3>
+              <p>Know exactly what you’re paying</p>
+          </div>
+      </div>
+      <div class="flexibal">
+          <img src="../assets/rating.png" alt="Rating">
+          <div class="details" >
+              <h3>5 million+ reviews</h3>
+              <p>By real, verified customers</p>
+          </div>
+      </div>
   </section>
   </body>
-  <script src="../script.js">
-    
-  </script>
+  <script src="../script.js"></script>
 </html>
